@@ -15,15 +15,26 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginBottom="80dp"
-            android:drawableLeft="@drawable/ic_chevron"
-            android:text="Entrar"
-            android:textColor="#FFF"
-            android:textSize="20dp" />
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_chevron"
+                android:layout_marginBottom="75dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:text="Entrar"
+                android:layout_marginLeft="290dp"
+                android:textColor="#FFF"
+                android:textSize="20dp" />
+        </LinearLayout>
 
         <ImageView
             android:layout_width="match_parent"
@@ -34,9 +45,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="0dp"
             android:drawableLeft="@drawable/ic_person"
-            android:hint="Usuário"
+            android:hint="  Usuário"
             android:paddingBottom="20dp"
             android:textColor="#FFF"
             android:textColorHint="#FFF" />
@@ -44,25 +55,33 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
-            android:drawableLeft="@drawable/ic_lock"
-            android:hint="Senha"
+            android:layout_marginBottom="10dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_help"
+            android:hint="  Senha"
             android:paddingBottom="20dp"
             android:textColor="#FFF"
-            android:textColorHint="#FFF" />
+            android:textColorHint="#FFF"
+            android:="@drawable/bordatwo"/>
 
         <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:drawableStart="@drawable/ic_input"
-            android:text="Entrar" />
+            android:layout_height="49dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borda"
+            android:drawableTop="@drawable/ic_input"
+            android:padding="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:textAlignment="center"
             android:text="Não tem uma conta? Crie uma."
             android:textColor="#FFF" />
+
+
     </LinearLayout>
 </LinearLayout>
