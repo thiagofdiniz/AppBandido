@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,94 +9,154 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_chevron" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:text="Cadastrar"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/addimage" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:paddingStart="25dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="109dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="39dp"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="75dp"
-                android:src="@drawable/ic_chevron" />
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_person" />
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="245dp"
-                android:layout_marginBottom="80dp"
-                android:text="Cadastrar"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3FFF"
+                android:hint="Nome"
+                android:inputType="text"
+                android:paddingBottom="20dp"
                 android:textColor="#FFF"
-                android:textSize="20dp" />
+                android:textColorHint="#CEFFFFFF"
+                android:textSize="16sp" />
+
+
         </LinearLayout>
 
-        <ImageView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/appBandio0" />
+            android:orientation="horizontal">
 
-        <EditText
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_mail" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3FFF"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="20dp"
+                android:textColor="#FFF"
+                android:textColorHint="#CEFFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
-            android:drawableLeft="@drawable/ic_person"
-            android:hint=" Nome"
-            android:paddingBottom="20dp"
-            android:textColor="#FFF"
-            android:textColorHint="#FFF"
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_lock" />
 
-            />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3FFF"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:paddingBottom="20dp"
+                android:textColor="#FFF"
+                android:textColorHint="#CEFFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-            android:drawableLeft="@drawable/ic_mail"
-            android:hint="Email"
-            android:paddingBottom="20dp"
-            android:textColor="#FFF"
-            android:textColorHint="#FFF" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_redeem" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:drawableLeft="@drawable/ic_lock"
-            android:hint="Senha"
-            android:paddingBottom="20dp"
-            android:textColor="#FFF"
-            android:textColorHint="#FFF" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="60dp"
-            android:drawableLeft="@drawable/ic_redeem"
-            android:hint="Data de Nascimento"
-            android:paddingBottom="20dp"
-            android:textColor="#FFF"
-            android:textColorHint="#FFF" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="51dp"
-            android:layout_marginLeft="70dp"
-            android:layout_marginRight="70dp"
-            android:layout_marginBottom="80dp"
-            android:background="@drawable/borda"
-            android:drawableStart="@drawable/ic_person"
-            android:padding="100dp"
-
-            />
-
-
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="#3FFF"
+                android:hint="Aniversário"
+                android:inputType="date"
+                android:paddingBottom="20dp"
+                android:textColor="#FFF"
+                android:textColorHint="#CEFFFFFF"
+                android:textSize="16sp" />
+        </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="75dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/borda"
+            android:drawableTop="@drawable/ic_person_add"
+            android:padding="12dp" />
+
+    </LinearLayout>
 </LinearLayout>
